@@ -1,11 +1,14 @@
+
 fastapi
 uvicorn
 scikit-learn
 pandas
 numpy
 transformers
-torch
+torch --extra-index-url https://download.pytorch.org/whl/cpu
 joblib
 pydantic
 python-multipart
 nltk
+duckduckgo-search
+mnb
