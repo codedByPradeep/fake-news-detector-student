@@ -14,8 +14,15 @@ function App() {
     setError(null);
     setResult(null);
 
+
     try {
-      const response = await fetch('http://localhost:8000/analyze', {
+      // Use the Render Backend URL for production, or fallback to localhost for development if needed.
+      // Ideally, use an environment variable, but for this student project, we'll hardcode the robust logic.
+      const backendUrl = import.meta.env.PROD
+        ? 'https://fake-news-detector-student.onrender.com/analyze'
+        : 'http://localhost:8000/analyze';
+
+      const response = await fetch(backendUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
