@@ -28,9 +28,10 @@ This project addresses the problem by providing a simple, user-friendly tool tha
 
 ## Technical Architecture
 
+
 ### Technologies Used:
-*   **Backend**: Python, FastAPI, Scikit-Learn, DuckDuckGo-Search, HuggingFace Transformers.
-*   **Frontend**: React.js, Vite, Modern CSS.
+*   **Application / UI**: Streamlit (Python-based Web App).
+*   **Engine**: Python, Scikit-Learn, DuckDuckGo-Search, HuggingFace Transformers.
 *   **AI Models**: Logistic Regression, Random Forest (Comparison Ensemble).
 
 ## How it Works (Real-World Application)
@@ -46,72 +47,39 @@ This project addresses the problem by providing a simple, user-friendly tool tha
 
 ---
 
+## Live Demo 🚀
+The project is live! You can access it here:
+**[Fake News Detector for Students](https://fake-news-detector-student.streamlit.app)**
 
-### Backend (Python & FastAPI)
-*   **Framework**: FastAPI for high-performance API endpoints.
-*   **Text Preprocessing**: NLTK-based cleaning (lowercasing, punctuation removal, stopword filtering).
-*   **Vectorization**: TF-IDF (Term Frequency-Inverse Document Frequency) to convert text into numerical features.
-*   **Machine Learning**:
-    *   **Logistic Regression**: A robust baseline model for text classification.
-    *   **Random Forest**: An ensemble method to capture non-linear relationships.
-    *   The system trains both and saves the one with higher accuracy on the test set.
-*   **Summarization**: HuggingFace Transformers (DistilBART) for abstractive summarization.
-
-### Frontend (React)
-*   **Framework**: React with Vite for fast development and optimized builds.
-*   **Styling**: Custom CSS variables for a premium, dark-mode compatible aesthetic.
-*   **State Management**: React Hooks for handling asynchronous API calls and UI states.
-
-## Model Performance
-
-The model is trained on a dataset of real and fake news articles.
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| Logistic Regression | ~95% | 0.94 | 0.96 | 0.95 |
-| Random Forest | ~93% | 0.92 | 0.94 | 0.93 |
-
-*Note: Performance metrics are based on the training data split. Actual results may vary depending on the dataset used.*
-
-## Getting Started
+## Getting Started (Local Run)
 
 ### Prerequisites
-
 *   Python 3.8+
-*   Node.js 16+
 
 ### Installation
 
-1.  **Project Setup**
-    (You are already in the project folder)
-
-2.  **Backend Setup**
+1.  **Setup Virtual Environment**
     ```bash
     cd backend
-    python -m venv .venv 
+    python -m venv .venv
     # Windows:
     .venv\Scripts\activate
     # Mac/Linux:
     source .venv/bin/activate
-    
-    pip install -r requirements.txt
-    
-    # Train the model (uses included sample data by default)
-    python train.py
-    
-    # Start the server
-    uvicorn main:app --reload
     ```
-    The API will be available at `http://localhost:8000`.
 
-3.  **Frontend Setup**
-    Open a new terminal in the project root.
+2.  **Install Dependencies**
     ```bash
-    cd frontend
-    # Dependencies were installed during setup
-    npm run dev
+    pip install -r requirements.txt
     ```
-    The application will be available at `http://localhost:5173`.
+
+3.  **Run the App**
+    ```bash
+    streamlit run streamlit_app.py
+    ```
+    The application will open automatically in your browser.
+
+    *(Alternatively, just run the `start_app.bat` file if on Windows)*
 
 
 ## Usage
