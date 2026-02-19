@@ -1,4 +1,5 @@
 
+
 fastapi
 uvicorn
 scikit-learn
@@ -12,3 +13,4 @@ python-multipart
 nltk
 duckduckgo-search
 mnb
+streamlit
