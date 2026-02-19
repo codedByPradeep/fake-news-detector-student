@@ -1,8 +1,9 @@
 
 # AI Fake News Detector for Students 🎓
 
+
 <p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Fake+News+Detector+for+Students" alt="Project Banner" width="100%">
+  <img src="assets/banner.svg" alt="Fake News Detector for Students" width="100%">
 </p>
 
 ## Problem Statement 🎯
