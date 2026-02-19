@@ -49,7 +49,7 @@ This project addresses the problem by providing a simple, user-friendly tool tha
 
 ## Live Demo 🚀
 The project is live! You can access it here:
-**[Fake News Detector for Students](https://fake-news-detector-student.streamlit.app)**
+**[Fake News Detector for Students](https://fake-news-detector-student-gbxesl5vnqbbparsxpdssf.streamlit.app/)**
 
 ## Getting Started (Local Run)
 
@@ -106,4 +106,4 @@ To use the full dataset:
 *   **Browser Extension**: Create a chrome extension to analyze news directly on websites.
 
 ---
-Built with ❤️ by [Your Name]
+Built with ❤️ by Pradeep Patwal
